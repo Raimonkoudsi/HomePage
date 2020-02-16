@@ -1,0 +1,91 @@
+body
+{
+margin:50px;
+background-color: rgb(47, 47, 47);
+}
+
+/* esto es para quitar el contorno a los enlaces */
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
+
+/* pagina home */
+.cartas
+{
+  border-style: outset;
+  border-width: 0px;
+  border-radius: 0px;
+  display:inline-block;
+  border-color: lightgrey;
+  margin: 30px;
+  padding:0px;
+  top:0px;
+  text-align: center;
+  font-size: 20px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:black;
+  cursor: pointer;
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.cartas img
+{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+/*para centrar todas las cartas*/
+#centrado
+{
+  text-align: center;
+}
+
+
+/* animaciones*/
+/* responsive */
+@media only screen and (min-width:1065px)
+{
+  .cartas{
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width:1065px) and (min-width:850px)
+{
+  .cartas{
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width:850px) and (min-width:750px)
+{
+  .cartas{
+    width: 20%;
+  }
+}
+@media only screen and (max-width:750px) and (min-width:700px)
+{
+  .cartas{
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width:700px) and (min-width:500px)
+{
+  .cartas{
+    width: 25%;
+  }
+}
+@media only screen and (max-width:500px)
+{
+  .cartas{
+    width: 30%;
+    margin: 10px;
+  }
+}

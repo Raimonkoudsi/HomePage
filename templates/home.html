@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <!--codigo del javascript carrousel-->
+  <script type="text/javascript" src="{{ url_for('static', filename='carrousel.js') }}"></script>
+<div id="centrado">
+
+  <div class="cartas" onmouseover="LibreriaEnter()" onmouseout="LibreriaExit()">
+    <a href="https://www.youtube.com/">
+      <img src="/static/images/icons/youtube-blanco.png" height="50" width="50" id="libreria">
+    </a>
+  </div>
+
+  <div class="cartas" onmouseover="JugueteriaEnter()" onmouseout="JugueteriaExit()">
+    <a href="https://www.twitter.com/">
+      <img src="/static/images/icons/twitter-blanco.png" height="50" width="50" id="jugueteria">
+    </a>
+  </div>
+
+  <div class="cartas" onmouseover="FerreteriaEnter()" onmouseout="FerreteriaExit()">
+    <a href="https://www.instagram.com/">
+      <img src="/static/images/icons/instagram-blanco.png" height="50" width="50" id="ferreteria">
+    </a>
+  </div>
+
+  <div class="cartas" onmouseover="OtroEnter()" onmouseout="OtroExit()">
+    <a href="https://www.facebook.com/">
+      <img src="/static/images/icons/facebook-blanco.png" height="50" width="50" id="otro">
+    </a>
+  </div>
+
+
+    <div class="cartas" onmouseover="PaypalEnter()" onmouseout="PaypalExit()">
+      <a href="https://www.paypal.com/">
+        <img src="/static/images/icons/paypal-blanco.png" height="50" width="50" id="paypal">
+      </a>
+    </div>
+
+
+
+    <div class="cartas" onmouseover="LinkedinEnter()" onmouseout="LinkedinExit()">
+      <a href="https://www.linkedin.com/">
+        <img src="/static/images/icons/linkedin-blanco.png" height="50" width="50" id="linkedin">
+      </a>
+    </div>
+
+</div>
+
+
+
+
+</div>
+
+{% endblock %}
+
